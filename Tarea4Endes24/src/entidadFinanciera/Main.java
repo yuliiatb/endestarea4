@@ -17,6 +17,26 @@ public class Main {
         saldoActual = objetoCuenta.estado();
         System.out.println("El saldo actual es"+ saldoActual );
         
+    }
+
+    public static void probarRetirar (double saldoActual, double cantidad){
+        try {
+            double nuevoSaldo = saldoActual - cantidad;
+            System.out.println("El saldo después de retirar la cantidad de " + cantidad + " es " + nuevoSaldo);
+        } catch (Exception e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+
+    }
     
+    public static void probarIngresar (double saldoActual, double cantidad){
+        try {
+            double nuevoSaldo = saldoActual + cantidad;
+            System.out.println("El saldo después de ingresar la cantidad de " + cantidad + " es " + nuevoSaldo);
+        } catch (Exception e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
     }
 }
